@@ -125,4 +125,11 @@ body{
     grid-area:table;
     background:#fff;
   }
-  
+  p{
+    color: red;
+    background-color: #0061f2;
+    font-weight: bold;
+  }
+  h1 {
+    margin: 10px;
+  }
