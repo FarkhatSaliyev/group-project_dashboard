@@ -1,0 +1,135 @@
+body{
+margin:0;
+padding:0;
+background:#eff3f9;
+position:relative;
+}
+/*Header*/
+header{
+width:100%;
+height:260px;
+background:#0061f2;
+
+}
+header .container-h{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color:white;
+  flex-wrap:wrap;
+}
+
+header .date-h{
+  background: #fff;
+  color:black;
+  padding-bottom: 5px;
+}
+header .date-h i{
+  color: blue;
+  margin-right:5px;
+}
+
+.text-h,.head-text-h i{
+  opacity:0.7;
+}
+
+footer{
+width:100%;
+height:100px;
+}
+
+
+
+@media only screen and (min-width:360px){
+  main{
+    position:relative;
+    top:-100px;
+    margin-left:10%;
+    margin-right:10%;
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(8,minmax(200px,auto));
+    grid-template-areas:
+    "welcome-back"
+    "recent-activity"
+    "progress-tracker"
+    "earnings-monthly"
+    "earnings-year"
+    "task-completion"
+    "pending-request"
+    "personal-management"
+  }
+}
+@media only screen and (min-width:1050px){
+  main{
+    position:relative;
+    top:-100px;
+    margin-left:10%;
+    margin-right:10%;
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:repeat(5,minmax(200px,auto));
+    grid-template-areas:
+    "welcome-back welcome-back"
+    "recent-activity progress-tracker"
+    "earnings-monthly earnings-year"
+    "task-completion pending-request"
+    "personal-management personal-management"
+  }
+}
+
+
+@media only screen and (min-width:1350px){
+  main{
+    position:relative;
+    top:-100px;
+     margin-left:10%;
+    margin-right:10%;
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows:repeat(3,minmax(200px,auto));
+    grid-template-areas:
+    "welcome-back  recent-activity recent-activity progress-tracker"
+    "earnings-monthly  earnings-year   task-completion  pending-request"
+    " personal-management personal-management personal-management personal-management"
+  }
+
+}
+.welcome-back{
+ grid-area: welcome-back;
+ background:#fff;
+}
+.recent-activity{
+ background:#fff;
+ grid-area: recent-activity;
+}
+.progress-tracker{
+ grid-area: progress-tracker;
+ background:#fff;
+}
+.earnings-monthly
+{
+ grid-area:earnings-monthly;
+ background:#0061f2;
+}
+.earnings-year{
+ grid-area:earnings-year;
+ background:#f4a100;
+}
+.task-completion
+{
+ grid-area:task-completion;
+ background:#00ac69;
+}
+.pending-request{
+grid-area:pending-request;
+background:#e81500;
+}
+.personal-management{
+  grid-area:personal-management;
+  background:#fff;
+}
