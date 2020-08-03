@@ -11,7 +11,7 @@ const ProgressTracker = () =>{
         <ul>
           <li className="box1">
             <div className="header">
-              <h7>Server MIgration</h7>
+              <h7>Server Migration</h7>
               <p>%20</p>
             </div>
             <div className="progress-box">
@@ -48,7 +48,7 @@ const ProgressTracker = () =>{
           <li className="box5">
                 <div className="header">
               <h7>Account Setup</h7>
-              <p>Completed</p>
+              <p>Complete!</p>
             </div>
             <div className="progress-box">
               <div className="progress-box5-color"></div>
