@@ -9,7 +9,7 @@ header{
 width:100%;
 height:260px;
 background:#0061f2;
-
+background-image: linear-gradient(135deg, #0061f2 0%, #8000dd 100%);
 }
 header .container-h{
   display:flex;
